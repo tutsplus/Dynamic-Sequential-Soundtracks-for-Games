@@ -1,0 +1,104 @@
+html, body {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+body {
+	background-color: #000000;
+}
+
+div.interface {
+	top: 0;
+	left: 0;
+	position: absolute;
+	visibility: hidden;
+}
+
+div.interface.visible {
+	visibility: visible;
+}
+
+div.sequencer {}
+
+div.channel {
+	overflow: hidden;
+}
+
+div.block {
+	width: 38px;
+	height: 38px;
+	border: 1px solid #000000;
+	float: left;
+	background-color: #303030;
+}
+
+div.block:hover {
+	background-color: #606060;
+}
+
+div.block.active {
+	background-color: #80C040;
+}
+
+div.block.active:hover {
+	background-color: #C0F0A0;
+}
+
+div.indicator {}
+
+div.position {
+	top: 0;
+	left: 0;
+	width: 38px;
+	height: 18px;
+	border: 1px solid #000000;
+	position: relative;
+	background-color: #D08040;
+}
+
+div.transport {
+	overflow: hidden;
+}
+
+div.button {
+	width: 58px;
+	height: 58px;
+	border: 1px solid #000000;
+	float: left;
+	background-color: #303030;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+div.button:hover {
+	background-color: #606060;
+}
+
+div.button.play {
+	background-image: url('skin/button_play.png');
+}
+
+div.button.stop {
+	background-image: url('skin/button_stop.png');
+}
+
+div.instructions {
+	padding-top: 40px;
+	color: #C0C0C0;
+	font-family: 'Arial', 'Helvetica';
+	font-size: 15px;
+}
+
+div.instructions p {
+	margin: 0;
+}
+
+div.instructions p + p {
+	margin-top: 20px;
+}
